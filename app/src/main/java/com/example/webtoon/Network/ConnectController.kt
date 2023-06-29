@@ -6,7 +6,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class ConnectController : Application() {
-    private val KEY = "26c49a17f1msh1d6cd1ed8ffffa7p15ede9jsn214e4636221a"
     private val BASE_URL = "https://webtoon.p.rapidapi.com"
     lateinit var connect: Connect
 
