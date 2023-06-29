@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.WritingCommentActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbarWriteComment"
+            layout="@layout/toolbar_writing_comment"/>
+
+        <ScrollView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtCommentWritingComment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:background="@null"
+                android:hint="You can write by clicking here.\nTell the story of your animal in Waiting Dog :)\nUp to 4 images can be attached."
+                android:textSize="13dp"
+                android:textColorHint="#C4C4C4"
+                android:textColor="#484848"/>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#F1F1F1">
+
+            <ImageView
+                android:id="@+id/imgCommentWritingRoll"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="7.5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/writing_plus_btn"/>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/bottomWritingComment"
+            layout="@layout/bottom_writing_comment"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

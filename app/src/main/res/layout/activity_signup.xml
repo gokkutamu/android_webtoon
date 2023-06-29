@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignupActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:paddingBottom="40dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgLoginLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_img"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true" />
+
+        <EditText
+            android:id="@+id/edtSignupName"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="Name"
+            android:textColorHint="#CECECE"
+            android:layout_marginTop="80dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/gray_border"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:id="@+id/edtSignupID"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="ID"
+            android:textColorHint="#CECECE"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/gray_border"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:id="@+id/edtSignupPW"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Password"
+            android:textColorHint="#CECECE"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/gray_border"
+            android:textSize="12dp"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btnSignupSubmit"
+            android:text="Sign up"
+            android:textSize="14dp"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/primary_border_fill"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

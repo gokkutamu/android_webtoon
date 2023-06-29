@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentInsetStart="0dp"
+    android:theme="@style/MainTheme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp">
+
+        <ImageView
+            android:id="@+id/btnToolbarWebtoonBack"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back_btn"
+            android:layout_weight="0"/>
+
+        <TextView
+            android:id="@+id/txtToolbarWebtoonTitle"
+            android:text="title"
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:textColor="#484848"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/btnToolbarWebtoonComment"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/sym_action_chat"/>
+
+    </LinearLayout>
+
+</Toolbar>

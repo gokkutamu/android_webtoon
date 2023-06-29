@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llItemProductOverviewContainer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgItemProductOverviewThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtItemProductOverviewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="#484848"
+                android:text="Work name"/>
+
+            <TextView
+                android:id="@+id/txtItemProductOverviewNumlike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8dp"
+                android:textColor="#F5CF45"
+                android:text="♥0"/>
+
+            <TextView
+                android:id="@+id/txtItemProductOverviewAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"
+                android:textColor="#BBBBBB"
+                android:text="Author"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

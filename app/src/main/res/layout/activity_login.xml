@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:paddingBottom="40dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_img"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:id="@+id/imgLoginLogo"/>
+
+        <EditText
+            android:id="@+id/edtLoginID"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="ID"
+            android:textColorHint="#CECECE"
+            android:layout_marginTop="80dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/gray_border"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:id="@+id/edtLoginPW"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="Password"
+            android:textColorHint="#CECECE"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/gray_border"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/btnLoginSubmit"
+            android:text="Log in"
+            android:textSize="14dp"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/primary_border_fill"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/txtLoginInfo"
+                android:text="Still not a member? "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#C7C7C7"
+                android:gravity="right"
+                android:textSize="11dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/txtLoginSignup"
+                android:textStyle="bold"
+                android:textColor="#707070"
+                android:text=" Sign Up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="11dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
